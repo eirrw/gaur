@@ -1,25 +1,24 @@
 package main
 
 import (
-	"github.com/urfave/cli/v2"
 	"log"
 	"os"
 	"time"
+
+	"github.com/urfave/cli/v2"
 	"virunus.com/gaur/cmd"
 )
 
-const AppName = "gaur"
-
 func main() {
 	app := cli.App{
-		Name:                   AppName,
-		HelpName:               "",
-		Usage:                  "",
-		UsageText:              "",
-		ArgsUsage:              "",
-		Version:                "",
-		Description:            "",
-		Commands:               []*cli.Command{
+		Name:        "gaur",
+		HelpName:    "",
+		Usage:       "",
+		UsageText:   "",
+		ArgsUsage:   "",
+		Version:     "",
+		Description: "",
+		Commands: []*cli.Command{
 			cmd.CmdUpdate,
 			cmd.CmdList,
 			cmd.CmdClean,
